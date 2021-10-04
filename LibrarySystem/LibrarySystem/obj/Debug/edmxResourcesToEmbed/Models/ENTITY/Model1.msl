@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibraryManagementSystemModelStoreContainer" CdmEntityContainer="LibraryManagementSystemEntities3">
+    <EntitySetMapping Name="ADMIN">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.ADMIN">
+        <MappingFragment StoreEntitySet="ADMIN">
+          <ScalarProperty Name="Admin_Pass" ColumnName="Admin_Pass" />
+          <ScalarProperty Name="Admin_Mail" ColumnName="Admin_Mail" />
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+          <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+          <ScalarProperty Name="Admin_Lastname" ColumnName="Admin_Lastname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUTHORS">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.AUTHORS">
+        <MappingFragment StoreEntitySet="AUTHORS">
+          <ScalarProperty Name="Author_ID" ColumnName="Author_ID" />
+          <ScalarProperty Name="Author_Name" ColumnName="Author_Name" />
+          <ScalarProperty Name="Author_Lastname" ColumnName="Author_Lastname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BOOK">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.BOOK">
+        <MappingFragment StoreEntitySet="BOOK">
+          <ScalarProperty Name="Book_Stocks" ColumnName="Book_Stocks" />
+          <ScalarProperty Name="Book_ID" ColumnName="Book_ID" />
+          <ScalarProperty Name="Book_Name" ColumnName="Book_Name" />
+          <ScalarProperty Name="Book_Category" ColumnName="Book_Category" />
+          <ScalarProperty Name="Book_Author" ColumnName="Book_Author" />
+          <ScalarProperty Name="Book_Year" ColumnName="Book_Year" />
+          <ScalarProperty Name="Book_Publisher" ColumnName="Book_Publisher" />
+          <ScalarProperty Name="Book_Page" ColumnName="Book_Page" />
+          <ScalarProperty Name="Book_Price" ColumnName="Book_Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CATEGORY">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.CATEGORY">
+        <MappingFragment StoreEntitySet="CATEGORY">
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PURCHASE">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.PURCHASE">
+        <MappingFragment StoreEntitySet="PURCHASE">
+          <ScalarProperty Name="Pr_ID" ColumnName="Pr_ID" />
+          <ScalarProperty Name="Pr_Book" ColumnName="Pr_Book" />
+          <ScalarProperty Name="Pr_User" ColumnName="Pr_User" />
+          <ScalarProperty Name="Pr_Date" ColumnName="Pr_Date" />
+          <ScalarProperty Name="Pr_Price" ColumnName="Pr_Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USERS">
+      <EntityTypeMapping TypeName="LibraryManagementSystemModel.USERS">
+        <MappingFragment StoreEntitySet="USERS">
+          <ScalarProperty Name="User_Lastname" ColumnName="User_Lastname" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_Mail" ColumnName="User_Mail" />
+          <ScalarProperty Name="User_Nickname" ColumnName="User_Nickname" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="User_Phone" ColumnName="User_Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
